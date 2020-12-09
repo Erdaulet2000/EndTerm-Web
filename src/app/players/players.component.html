@@ -1,0 +1,22 @@
+<br><br>
+<br>
+<br>
+<table class="table table-bordered">
+  <tr class="bg-primary">
+    <th>Id</th>
+    <th>Name</th>
+    <th>City</th>
+    <th>Salary</th>
+    <th>DOB</th>
+    <th>Age</th>
+  </tr>
+  <tr *ngFor="let player of players">
+    <td><a [routerLink]="['/player', player.id]">{{player.id}}</a></td>
+    <td>{{player.name| uppercase}}</td>
+    <td>{{player.city| uppercase}}</td>
+    <td>{{player.salary | currency}}</td>
+    <td>{{player.dob| date: 'dd/MM/yyyy'}}</td>
+    <td>{{player.dob | age}} </td>
+  </tr>
+</table>
+<a class="nav-link" routerLink="/addPlayer"><i class="fa fa-user" aria-hidden="true">Add player</i></a>

@@ -1,0 +1,31 @@
+{
+  "users": [{
+      "id": "1",
+      "name": "Messi Lionel",
+      "city": "Argentina",
+      "salary": "30000000",
+      "dob": "06/24/1987"
+    },
+    {
+      "id": "2",
+      "name": "Ansu Fati",
+      "city": "Spain",
+      "salary": "5000000",
+      "dob": "10/31/2002"
+    },
+    {
+      "id": "3",
+      "name": "Mark-Andre ter Stegen",
+      "city": "Germany",
+      "salary": "10000000",
+      "dob": "04/30/1992"
+    },
+    {
+      "id": "4",
+      "name": "Dest",
+      "city": "USA",
+      "salary": "1000000",
+      "dob": "11/03/2000"
+    }
+  ]
+}

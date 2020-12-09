@@ -1,0 +1,23 @@
+<html>
+<head>
+  <link rel="stylesheet" href="login.component.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+</head>
+
+<body>
+  <div class="main">
+    <p class="sign" align="center">Sign in</p>
+    <form [formGroup]="userForm" (ngSubmit)="onSubmit()" class="form1">
+
+      <label>Email address</label>
+      <input type="email" class="un" formControlName="useremail" align="center" placeholder="Enter email">
+
+      <label>Password</label>
+      <input type="password" class="pass" formArrayName="password" align="center" placeholder="Password">
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
